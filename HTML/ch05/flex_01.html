@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            .outer {
+                margin: 0 auto;/*세로 가로*/
+                text-align: center;
+                border: 1px solid red;
+                width: 80%;
+            }
+            .container {
+                display: inline-block;
+                text-align: center;
+                border:3px solid green;
+                width: 800px;
+            }
+            .box {
+                display: inline-block;
+                border:1px solid black;
+                height:100px;
+                width:200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="container">
+                <div class="box">첫번째 박스</div>
+                <div class="box">두번째 박스</div>
+                <div class="box">세번째 박스</div>    
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- flex : 모든 브라우저에서 적용되는 태그 -->
+<!-- display: inline를 하면 높이(height)가 깨진다 -->
+<!-- display: inline-block 태그를 쓰면 inline 속성을 가지면서도 높이가 깨지지 않음 -->
+<!-- text-align : 택스트의 위치 조정 태그 -->
+<!-- text-align은 inline 속성을 가진 애들에게 모두 먹힌다 -->
+<!-- margin : 원하는 만큼 공간을 준다 -->
+<!-- margin: 0 auto = 자동으로 중심을 잡아준다 -->

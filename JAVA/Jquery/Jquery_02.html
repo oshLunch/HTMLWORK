@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>안녕! 날 클릭해!!</p>
+
+    <script>
+        // click 함수의 인수에는 함수가 들어가야 함 = 리스너(감시자)
+        $("p").click(function(){
+            alert("클릭됨");        //클릭 되었을때 호출됨(리스너)
+        });
+
+        $("p").dblclick(function(){
+            alert("두번 클릭됨");
+        });
+
+        $("p").mouseenter(function(){
+            alert("마우스 올라감");
+        })
+    </script>
+</body>
+</html>

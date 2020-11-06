@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* 버튼, 마진, 폰트 사이즈 등 */
+
+body{
+    background-color: #FAFAFA;
+}
+
+.login-button{
+    margin: 10px 0;
+    background-color: #B2dffc;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-weight: 700;
+}
+
+/* mt(margin-top), mb(margin-bottom) */
+
+.mt10{
+    margin-top: 10px;
+}
+
+.mt15{
+    margin-top: 15px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.a-link-facebook{
+    color: #385185;
+    font-weight: 700;   
+    text-decoration: none;
+}
+
+.a-link-forget{
+    text-decoration: none;
+    font-size: 13;
+    color: black;
+}
+
+.a-link-join{
+    color: #0095f6;
+    text-decoration: none;
+}

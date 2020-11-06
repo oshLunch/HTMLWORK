@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            .flex-container{                    /* flex-start, flex-end, center */
+                display: flex;                  /* space-around, space-evenly, space-between */
+                justify-content: space-evenly;  /* flex의 기본 진행방향은 가로 */
+            }                                               
+            .item{
+                border:1px solid black;
+                height: 100px;
+                width: 200px;
+                
+                display: flex;
+                justify-content: flex-end;      /* MainAxis */
+                align-items: flex-end;          /* CrossAxis */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="item">첫번째 박스</div>
+            <div class="item">두번째 박스</div>
+            <div class="item">세번째 박스</div>
+        </div>
+    </body>
+</html>

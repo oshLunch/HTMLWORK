@@ -1,0 +1,10 @@
+*{                  /* *은 모든 태그에 적용된다 */                          
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* 박스 사이즈에 border값이 합쳐져 결과값이 달라지므로 자동으로 border값을 계산해서 크기를 줄여준다 */
+}
+
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");

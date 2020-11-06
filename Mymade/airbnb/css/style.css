@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 880px;
+    background-image: url('/Mymade/airbnb/images/background.jpg');
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    display: flex;
+}
+
+.nav__logo{
+    display: flex;
+    margin: 15px;
+}
+
+.nav__menu{
+    display: flex;
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section__search-form{
+    display: inline-block;
+    position: relative;  
+    padding: 20px;
+    top: 35px;
+    left: 35px;
+    width: 300px;
+    height: 370px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.search-form__main{  
+    width: 250px;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.search-form__list{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.check-inout{
+    display: flex;
+}
+
+.search-form__list{
+    width: 50%;
+}
+
+.search-form__button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-button{
+    margin-top: 10px;
+    width: 55px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: pink;
+}
+
+input{
+    height: 35px;
+}
+
+.l-title{
+    width: 100%;
+    margin: 20px 60px 20px 60px;
+    border: 1px solid black;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="box1"><h1>1111111111</h1></div>
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">숨기기</button>
+
+    <script>
+        function show(){
+            //$("#box1").html("Hello");
+            var box1El = document.querySelector("#box1");
+            box1El.style = "display:block;"
+        }
+        function hide(){
+            //$("#box1").html("Hello");
+            var box2El = document.querySelector("#box2");
+            box2El.style = "display:none;"
+        }
+    </script>
+</body>
+</html>

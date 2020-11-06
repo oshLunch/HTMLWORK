@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+<body>
+    <h1>날 사라지게 해봐요!</h1>
+
+    <script>
+        $("h1").click(function(){
+            $("h1").fadeOut(3000); // 천분의 1초
+        });
+
+        $("h2").click(function(){
+            $("h1").fadeIn();
+        })
+    </script>
+</body>
+</html>

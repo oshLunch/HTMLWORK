@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            .flex-container{
+                display: flex; /*flex는 창 크기에 따라 반응하는 유연성이 있다*/
+                padding: 20px; /*margin은 바깥에서 공간을 주고 padding은 안에서 공간을 준다*/
+                border: 5px solid black;
+                background-color: lightblue;
+                flex-wrap: wrap; 
+                justify-content: space-around; /* 창의 크기에 맞게 내용물을 가운데 정렬한다 */
+            }   /* flex-direction: column = 진행방향을 세로로 정렬시킨다 */
+                /* flex-direction: row = 진행방향을 가로로 정렬시킨다 */
+                /* flex-wrap: wrap = 창의 크기에 맞게 진행방향을 조절한다 */
+            .item{
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>

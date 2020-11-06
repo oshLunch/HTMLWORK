@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <style>
+        div{
+            background-color: antiquewhite;
+            border: 1px solid black;
+        }
+
+        .box1{
+            height: 100px;
+        }
+
+        .box2{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" id="box1">날 클릭해봐요</div>
+    <div class="box2" id="box2">Hello World</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#box2").hide();
+        });
+
+        $(document).click(function(){
+            $("#box1").slideToggle();
+        });
+    </script>
+</body>
+</html>

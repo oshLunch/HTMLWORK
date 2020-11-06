@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery 에제 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 100px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // ready 함수는 '그림이 다 그려지면' 이라는 뜻
+        // ready의 인수에는 실행될 함수가 들어가야 함
+        var test = (function(){
+            aiert("그림이 다 그려짐");
+        });
+    </script>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <button class="show()">보이기</button>
+
+    <script>
+        // 선택자 .(점:class) #(샾:id) div(태그명)
+        $(".box1").hide();
+        $(".box2").hide();
+
+        function show(){
+            $("div").show();
+        }
+    </script>
+</body>
+</html>
