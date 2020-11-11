@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: #262626;
+}
+
+header{
+    height: 50px;
+    border: 1px solid #DBDBDB;
+}
+
+.headerBox{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxLine{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo{
+    margin-left: 100px;
+    height: 40px;
+    width: 110px;
+    background-image: url(/Mymade/instagram/images/Instagram_logo.svg);
+    background-size: 100% 100%;
+}
+
+.header__search{
+    height: 28px;
+    width: 220px;
+    border-radius: 3px;
+    color: grey;
+    text-align: center;
+    border: 1px solid #DBDBDB;
+    background-color: #fafafa;
+}
+
+.material-icons.md-18 {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.boxLine-icon{
+    width: 33%;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+footer{
+    background-color: #fafafa;
+    padding-top: 15px;
+    height: 130px;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav{
+    width: 600px;
+    height: 30px;
+    text-align: center;
+    color: gray;
+    font-size: 13px;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}

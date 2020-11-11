@@ -31,7 +31,7 @@ footer{
 .header-title{
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 30px;
     width: 100%;
     font-size: 30px;
     font-weight: 900;
@@ -44,7 +44,7 @@ footer{
 
 .main-title{
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 80px;
     width: 500px;
     height: 200px;
@@ -102,7 +102,7 @@ footer{
 
 .main-box .main-box__img .img__next{
     width: 20%;
-    height: 20%;
+    height: 15%;
     position: absolute;
     bottom: 0%;
     left: 0%;
@@ -111,4 +111,10 @@ footer{
     justify-content: center;
     background-color: white;
     font-size: 15px;
+}
+
+@media screen and (max-width:500px) {
+    .main-title {
+        font-size: 20px;
+    }
 }

@@ -1,0 +1,205 @@
+.member-page-hr{
+    margin: 40px 0 0 0;
+    color: #dfdfdf;
+}
+
+.member-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+    height: 100%;
+}
+
+.member-profile{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.profile__img-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container__box{
+    border: 3px solid #fa9f4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.box__in-img{
+    border: 1px solid #dfdfdf;
+    width: 160px;
+    height: 160px;
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Mymade/instagram/images/pepe.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.profile__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0 0 50px;
+    width: 70%;
+}
+
+.info__name{
+    display: flex;
+    align-items: center;
+}
+
+.name__profile-Name{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-right: 30px;
+}
+
+.name__flow-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 30px;
+    background-color: #0095f6;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.name__more-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 30px;
+    background-color: #0095f6;
+    color: white;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 900;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.info__flow{
+    display: flex;
+}
+
+.flow__what{
+    font-size: 15px;
+}
+
+.flow__many{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+.info__place{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.member-container .member-friends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    padding: 0 5px 0 5px;
+}
+
+.member-container .friends__info{
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.member-container .info__img-container{
+    border: 1px solid #dfdfdf;
+    width: 90px;
+    height: 90px;
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-container .friends-img{
+    border: 1px solid #dfdfdf;
+    width: 80px;
+    height: 80px;
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Mymade/instagram/images/pepe.jpg);
+    background-size: cover;
+}
+
+.m-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 50px;
+    padding: 0 40px 0 40px;
+}
+
+.m-nav__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-row-start: span 2;
+    grid-row-end: 2;
+    grid-column-start: span 1;
+    grid-column-end: 3;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.m-img-list{
+    display: grid;
+    grid-template-rows: 310px 310px 310px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.m-img{
+    justify-content: space-around;
+    background-image: url(/Mymade/instagram/images/pepe.jpg);
+    background-size: cover;
+}

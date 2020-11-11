@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/Mymade/instagram/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery 스크립트  -->
+</head>
+
+<body>
+    <header>
+        <div class="headerBox">
+            <div class="boxLine">
+                <div class="header__logo"></div>
+            </div>
+            <div class="boxLine">
+                <input type="text" class="header__search" placeholder="검색">
+            </div>
+            <nav class="boxLine-icon">
+                <i class="material-icons md-18">home</i>
+                <i class="material-icons md-18">adjust</i>
+                <i class="material-icons md-18">favorite_border</i>
+                <i class="material-icons md-18">account_circle</i>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="post-container">
+            <div class="post-main">
+                <section class="post-img">
+                    <div class="post-img__images"></div>
+                </section>
+
+                <section class="post-info">
+                    <div class="info__name-container">
+                        <div class="img-box">
+                            <div class="name__img"></div>
+                        </div>
+
+                        <div class="name__name">
+                            <div class="name__id">h_gd</div>
+                            ·
+                            <div class="name__id">팔로잉</div>
+                        </div>
+
+                        <div class="name__more">
+                            <div class="more__icon">
+                                <i class="material-icons">more_horiz</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="border: 1px solid #DBDBDB;" />
+
+                    <div class="post__box">
+                        <div class="post__img-box">
+                            <div class="name__img"></div>
+                        </div>
+                        <div class="post-in">
+                            <div class="name__id">
+                                h_gd
+                                <span class="post-in__content">슬픈 개구리 페페는 항상 슬픈 개구리입니다</span>
+                            </div>
+                            <span class="post-in__hashtag"><a href="#" style="color: blue;">#슬픈개구리</a></span>
+                            <span class="uplode-day">2주</span>
+                        </div>
+                    </div>
+
+                    <div class="post__box">
+                        <div class="post__img-box">
+                            <div class="name__img"></div>
+                        </div>
+                        <div class="comment-in">
+                            <div class="name__id">
+                                i_gj
+                                <span class="comment-in__content">너무 슬프고</span>
+                            </div>
+                            <div class="comment-in__info">
+                                <div>
+                                    <span class="uplode-day">2주</span>
+                                    <span>좋아요 1개</span>
+                                    <span>답글 달기</span>
+                                </div>
+                                <div>
+                                    <div class="comment-like">
+                                        <i class="material-icons"
+                                            style="font-size: 15px; padding-right: 5px;">favorite_border</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-in__recomment">
+                                <span>--- 답글 보기(1개)</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr style="border: 1px solid #DBDBDB;" />
+
+                    <div class="content__like-container">
+                        <div class="like__icon">
+                            <div class="icon__3">
+                                <i class="material-icons" style="font-size: 30px;">favorite_border</i>
+                                <i class="material-icons" style="font-size: 30px;">mode_comment</i>
+                                <i class="material-icons" style="font-size: 30px;">send</i>
+                            </div>
+                            <div class="icon__bookmark">
+                                <i class="material-icons"
+                                    style="font-size: 30px; padding-right: 5px;">bookmark_border</i>
+                            </div>
+                        </div>
+                        <div class="like__many">좋아요 22개</div>
+                        <div class="like__uplode-day">10월 25일</div>
+                    </div>
+
+                    <hr style="border: 1px solid #DBDBDB;" />
+
+                    <div class="content__my-comment-container">
+                        <div class="my-comment">
+                            <input type="text" id="my-comment"
+                                style="outline-style: none; padding-left: 5px; font-size: 15px; width: 100%; height: 100%; border: none;"
+                                placeholder="댓글 입력..." />
+                        </div>
+                        <div class="my-comment-upload">
+                            <button
+                                style="outline-style: none; width: 100%; height: 100%; background-color: white;
+                                color: #0095f6; font-size: 14px; font-weight: 900; border: none; cursor: pointer;">게시</button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <hr style="margin: 50px 0 50px 0;" />
+
+            <h5 style="margin: 0 0 30px 0; color: gray;">h_gd님의 게시물 더 보기</h5>
+            <section class="post-another-img-container">
+                <section class="m-img-list">
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                    <div class="m-img"></div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer-link">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">약관</a></li>
+                    <li><a href="#">인기 계정</a></li>
+                    <li><a href="#">해시태그</a></li>
+                    <li><a href="#">위치</a></li>
+                </ul>
+                </div>
+        </section>
+        <section class="footer-link">
+            <nav class="footer-nav">
+                <a href="#">한국어</a>
+                © 2020 Instagram from Facebook
+            </nav>
+        </section>
+    </footer>
+</body>
+
+</html>

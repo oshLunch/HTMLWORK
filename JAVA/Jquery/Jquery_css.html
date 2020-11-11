@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery 스크립트  -->
+    <style>
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery CSS</h1>
+    <hr>
+    <h3>addClass</h3>
+    <button onclick="changeBlue()">addClass</button>
+    <button onclick="removeBlue()">removeClass</button>
+    <button onclick="changeCss()">changeCss</button>
+    <div class="blue">첫번째 디자인</div>
+    <div id="d2">두번째 디자인</div>
+
+    <script>
+        function changeBlue(){
+            $("#d2").addClass("blue");
+            // id에 class를 추가할 수 있다.
+        }
+
+        function removeBlue(){
+            $("div").removeClass("blue");
+        }
+
+        function changeCss(){
+            $("div").css("background-color", "yellow");
+        }
+    </script>
+</body>
+</html>

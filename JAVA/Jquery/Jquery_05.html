@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+<body>
+    <h1>text().html().val()</h1>
+    <hr/>
+    <div id="text1">텍스트 공간</div>
+    <div id="html1">HTML 공간</div>
+    <input type="text" value="love" id="input1" />
+    
+    <button onclick="change1()">텍스트 공간 변경</button>
+    <button onclick="change2()">HTML 공간 변경</button>
+    <button onclick="change3()">INPUT 값 변경</button>
+
+    <script>
+        function change1(){
+            // set
+            $("#text1").text("<b>텍스트 내용 변경</b>");
+            // 텍스트로 들고오면 <b> 태그를 먹지 않는다
+            // 어느 태그 안에 있는 내용을 변경하고 싶을 때 사용한다
+
+            // get
+            console.log($("#text1").text());
+        }
+
+        function change2(){
+            // set
+            $("#html1").html("<b>텍스트 내용 변경</b>");
+            //html의 요소를 적용시켜 보여준다
+
+            // get
+            console.log($("#html1").html());
+        }
+
+        function change3(){
+            // set
+            $("#input1").val("부산 진구 중앙대로");
+            //val값을 가져온다
+
+            console.log($("#input1").val());
+        }
+    </script>
+</body>
+</html>

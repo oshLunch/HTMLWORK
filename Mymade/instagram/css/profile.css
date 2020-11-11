@@ -1,0 +1,93 @@
+.profile-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+    height: 570px;
+}
+
+.profile__edit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 30px;
+    background-color: #fafafa;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 10px;
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    cursor: pointer;
+}
+
+.profile-start-list{
+    display: grid;
+    grid-template-rows: 230px 230px 230px;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-gap: 25px;
+}
+
+.profile-start-img{
+    justify-content: space-between;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 10px 0 10px;
+}
+
+.start-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.test {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.start__connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10px 0 10px;
+    width: auto;
+    height: 30px;
+    background-color: #0095f6;
+    color: #fafafa;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 10px;
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    cursor: pointer;
+}
+
+.start__icon-container{
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.start__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

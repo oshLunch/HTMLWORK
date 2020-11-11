@@ -1,0 +1,83 @@
+.flow-list-container{
+    margin-top: 80px;
+    width: 600px;
+    height: 950px;
+}
+
+.flow-list-container__friends{
+    background-color: #ffffff;
+    margin-top: 10px;
+    height: 950px;
+}
+
+.flow-list-container .friends{
+    display: flex;
+    padding: 5px;
+    height: 65px;
+}
+
+.flow-list-container .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow-list-container .friends__img{
+    margin-left: 10px;
+    border: 1px solid #DBDBDB;
+    background-image: url();
+    border-radius: 45px 45px 45px 45px;
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
+    background-image: url(/Mymade/instagram/images/pepe.jpg);
+    background-size: cover;
+}
+
+.flow-list-container .friends__info{
+    margin-left: 10px;
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flow-list-container .info__id{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.flow-list-container .info__name{
+    margin-top: 1px;
+    font-size: 15px;
+    color: grey;
+}
+
+.flow-list-container .info__best{
+    margin-top: 1px;
+    font-size: 11px;
+    color: gray;
+}
+
+.flow-list-container .friends__flow{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow-list-container .flow-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 65px;
+    height: 30px;
+    background-color: #0095f6;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.image-container{
+    display: grid;
+    grid-template-rows: 310px 310px 310px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 930px;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.img-small{
+    margin: 0 30px 30px 0;
+    background-image: url(/Mymade/instagram/images/pepe.jpg);
+    background-size: cover;
+}
+
+.img-big{
+    margin: 0 30px 30px 0;
+    grid-row-start: span 2;
+    grid-row-end: 3;
+    grid-column-start: span 2;
+    grid-column-end: 4;
+    background-image: url(/Mymade/instagram/images/pepe.jpg);
+    background-size: cover;
+}

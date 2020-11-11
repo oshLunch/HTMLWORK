@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery 스크립트  -->
+    <style>
+        #comment-list{
+            border: 5px solid black;
+            padding: 10px;
+        }
+
+        /* 코멘트 리스트 내부의 박스에 모두 적용 */
+        #comment-list > div{
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="comment-list">
+        <div id="item-1">
+            <span id="comment-1">댓글 1</span>
+            <span id="comment-delete-1" onclick="deleteComment(1)">| 삭제</span>
+        </div>
+        <div id="item-2">
+            <span id="comment-2">댓글 2</span>
+            <span id="comment-delete-2" onclick="deleteComment(2)">| 삭제</span>
+        </div>
+    </div>
+    <hr/>
+    <input type="text" id="input-comment">
+    <button onclick="addComment()">댓글 추가</button>
+
+    <script>
+        // append, prepend, after, before
+        // append : 박스 내부의 뒤에 추가된다
+        // prepend : 박스 내부의 앞에 추가된다
+        // after : 박스의 뒤에 추가된다
+        // before : 박스의 앞에 추가된다
+        var no = 3;
+
+        function deleteComment(id){
+            $("#item-"+id).remove();
+        }
+
+        function addComment(){
+            var comment = $("#input-comment").val()
+            // input 태그의 값은 모두 val()을 사용한다
+
+            // 변수를 가지고 노는 방법
+            // (1).백픽``${변수}
+            // (2). +연산자로 변수를 더하기(결합)
+            var commentItem = `<div id="item-${no}">`;
+            commentItem = commentItem + `<span id="comment-${no}">${comment}</span>`;
+            commentItem = commentItem + `<span id="comment-delete-${no}" onclick="deleteComment(${no})"> | 삭제</span>`;
+            commentItem = commentItem + `</div>`;
+
+            $("#comment-list").prepend(commentItem);
+            no = no + 1;
+
+            $("#input-comment").val(``);
+        }
+    </script>
+</body>
+</html>
