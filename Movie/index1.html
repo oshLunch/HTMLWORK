@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            grid-row-gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        MOVIE
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    인기영화
+                </li>
+                <li class="nav-item">
+                    추천영화
+                </li>
+                <li class="nav-item">
+                    최신영화
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <div class="card-grid">
+
+        </div>
+    </div>
+
+    <script>
+        // http://113.198.238.82:8000/api/movie (GET) => JSON
+        $.ajax({
+            type: "GET",
+            url: "http://113.198.238.82:8000/api/movie",
+            dataType: "json"
+        }).done(function (movies) {
+            console.log(movies);
+            console.log(movies[0]);
+            $(".card-grid")[0].append(movies[0].title);
+        });
+    </script>
+</body>
+
+</html>

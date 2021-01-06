@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            grid-row-gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        MOVIE
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    인기영화
+                </li>
+                <li class="nav-item">
+                    추천영화
+                </li>
+                <li class="nav-item">
+                    최신영화
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <div class="card-grid">
+
+            <!-- 디자인 = 컴포넌트 -->
+            <div class="card" style="width:300px">
+                <img class="card-img-top"
+                    src="https://img.yts.mx/assets/images/movies/karate_kill_2016/medium-cover.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    See Profile
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // http://113.198.238.82:8000/api/movie (GET) => JSON
+        $.ajax({
+            type: "GET",
+            url: "http://113.198.238.82:8000/api/movie",
+            dataType: "json"
+        }).done(function (movies) {
+            addDiv(movies);
+        });
+
+        // 카드를 동적으로 만들어서 그릴 예정
+        function addDiv(movies) {
+            var cardGrid = $(".card-grid")[0];
+            for (movie of movies) {
+                var title = movie.title;
+                var rating = movie.rating;
+                var medium_cover_image = movie.medium_cover_image;
+
+                var newDiv = document.createElement("div");
+                newDiv.className = "card";
+                newDiv.style = "width:300px";
+
+                var cardDetail = `<img class="card-img-top" src="${medium_cover_image}" alt="Card image">`;
+                cardDetail += `<div class="card-body">`;
+                cardDetail += `<h4 class="card-title">${title}</h4>`;
+                cardDetail += `<p class="card-text">평점 : ${rating}</p>`;
+                cardDetail += `삭제`;
+                cardDetail += `</div></div>`;
+                cardDetail += `<button class="btn btn-danger" onclick="deleteById(${movie.id})">삭제</button>`;
+                newDiv.innerHTML = cardDetail;
+                // http://113.198.238.82:8000/api/movie/1 삭제  
+
+                cardGrid.append(newDiv);
+                newDiv.id = "card-" + movie.id;
+
+                function deleteById(movieId) {
+                    // ajax요청 삭제
+                    $.ajax({
+                        // method : DELETE
+                        type: "delete",
+                        // http://113.198.238.82:8000/api/movie/{movieId변수}
+                        url: 'http://113.198.238.82:8000/api/movie/${movieId}',
+                        // 응답 : text/plain
+                        dataType: "text/plain"
+                    }).done((result) => {
+                        if (result === "ok") { //===는 타입까지 비교해준다
+                            // dom객체를 삭제 - remove() 제이쿼리
+                            $('#card-${movieId}').remove(); // 데이터와 UI를 동기화
+                        } else {
+                            alert("삭제가 실패하였습니다");
+                        }
+                    });
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

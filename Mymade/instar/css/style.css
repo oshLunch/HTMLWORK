@@ -1,6 +1,6 @@
-@import url("/instar/css/common.css");
+@import url("/Mymade/instar/css/common.css");
 /* 어디에서나 쓸 수 있는 css */
 /* ex) margin, padding 등 */
-@import url("/instar/css/login.css");
-@import url("/instar/css/footer.css");
+@import url("/Mymade/instar/css/footer.css");
+@import url("/Mymade/instar/css/login.css");
 /* 추가적인 페이지에 대한 css 필요*/

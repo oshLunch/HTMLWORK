@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        ol {
+            border: 5px solid red;
+            padding: 20px;
+        }
+
+        li {
+            border: 2px solid blue;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ol id="items">
+        <li id="item-1">List item 1</li>
+        <li id="item-2">List item 2</li>
+        <li id="item-3">List item 3</li>
+
+    </ol>
+
+    <button id="btnBefore">before</button>
+    <button id="btnAfter">after</button>
+    <button id="btnAfter2">after2</button>
+    <button id="btnAppend">append</button>
+    <button id="btnPrepend">prepend</button>
+
+    <script>
+        var num = 1;
+
+        $("#btnBefore").click(function () {
+            $("#items").before(" <b>before</b>.");
+        });
+
+        $("#btnAfter").click(function () {
+            $("#items").after("<b>after</b>");
+        });
+
+        $("#btnAfter2").click(function () {
+            $("#item-3").after("<li>after" + num + "</li>");
+            num = num + 1;
+        });
+
+        $("#btnAppend").click(function () {
+            $("#items").append("<li>append" + num + "</li>");
+            num++;
+        });
+
+        $("#btnPrepend").click(function () {
+            $("#items").prepend("<li>prepend" + num + "</li>");
+            num++;
+        });
+    </script>
+</body>
+
+</html>
